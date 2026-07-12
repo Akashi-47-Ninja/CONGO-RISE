@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #dfe0e5;
+    color: #201757;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 10%;
+
+    background: #411A8D;
+    color: white;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    min-height: 90vh;
+}
+
+.hero-text{
+    max-width: 500px;
+}
+
+.hero-text h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+button{
+    padding: 12px 25px;
+    border: none;
+    background: #411A8D;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+    background: #201757;
+}
+
+.hero-image img{
+    width: 350px;
+    border-radius: 20px;
+}
+
+.about{
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section-skills {
+    text-align: center;
+    padding: 50px ;
+    margin-bottom: 25px;
+}
+
+/* 1. Style de base et couleur du texte (pour certains navigateurs) */
+progress {
+    appearance: none;     /* Supprime le style par défaut du navigateur */
+    -webkit-appearance: none;
+    width: 200px;         /* Ajustez la largeur selon vos besoins */
+    height: 12px;
+}
+
+/* 2. Couleur de la BARRE (le fond gris) */
+progress::-webkit-progress-bar {
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* 3. Couleur du REMPLISSAGE (la valeur actuelle) */
+
+/* Pour Chrome, Safari et Opera */
+progress::-webkit-progress-value {
+    background-color: #411A8D; /* Mettez votre couleur ici */
+    border-radius: 10px;
+}
+
+/* Pour Firefox */
+progress::-moz-progress-bar {
+    background-color: #411A8D; /* Mettez la même couleur ici */
+    border-radius: 10px;
+}
+
+.main-container {
+    display: grid;
+    /* Crée 2 colonnes de taille égale (1fr) */
+    grid-template-columns: 1fr 1fr; 
+    /* Ajoute de l'espace horizontal (60px) et vertical (10px) entre les colonnes */
+    column-gap: 60px;
+    row-gap: 10px;
+    
+    max-width: 900px; /* Optionnel : limite la largeur totale pour que ce soit plus lisible */
+    margin: 0 auto;   /* Centre le bloc sur la page */
+}
+.skill-group {
+    
+    display: flex;         /* Aligne le texte et la barre sur la même ligne */
+    align-items: center;  /* Centre verticalement le texte par rapport à la barre */
+    margin-bottom: 25px;  /* Espace entre chaque compétence */
+    gap: 30px;            /* Crée un espace horizontal entre le mot et la barre */
+}
+
+.skill-group span {
+  width: 120px;         /* Donne une largeur fixe aux mots pour que toutes les barres commencent au même niveau */
+    text-align: left;
+}
+
+progress {
+  flex-grow: 1;         /* Permet à la barre de prendre tout l'espace restant à droite */
+}
+
+.projects{
+    padding: 80px 10%;
+}
+
+.projects h2{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.project-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    width: 300px;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3{
+    padding: 15px;
+}
+
+.card p{
+    padding: 0 15px 20px;
+}
+
+
+.contact{
+    padding: 80px 10%;
+    text-align: center;
+    background:#411A8D ;
+    color: white;
+}
